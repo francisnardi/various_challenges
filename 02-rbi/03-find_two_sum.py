@@ -14,8 +14,7 @@ def find_two_sum(arr, n):
     for j, k in idxs.items():
         elem = k.pop()
         dif = n - j
-        cand = idxs[n-j]
-        if dif in idxs and cand:
+        if dif in idxs and idxs[n-j]:
             return elem, idxs[n-j].pop()
 
 

@@ -33,5 +33,16 @@ def find_next(value, n):
 
 
 if __name__ == '__main__':
-    value = "1234"
-    find_next(value, len(value))
+    value1 = "1234"
+    #output1: "1243"
+    value2 = "218765"
+    # output2 = "251678"
+    value3 = "4321"
+    #output3: "Impossible to find a NEXT higher number"
+    value4 = "534976"
+    #output4: "536479"
+
+    find_next(value1, len(value1))
+    find_next(value2, len(value2))
+    find_next(value3, len(value3))
+    find_next(value4, len(value4))
