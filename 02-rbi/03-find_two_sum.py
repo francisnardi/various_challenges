@@ -12,9 +12,9 @@ def find_two_sum(arr, n):
     for ind, number in enumerate(arr):
         idxs.setdefault(number, []).append(ind)
     for j, k in idxs.items():
-        i = k.pop()
+        elem = k.pop()
         if n - j in idxs and idxs[n-j]:
-            return i, idxs[n-j].pop()
+            return elem, idxs[n-j].pop()
 
 
 def print_fts(arr, n):
