@@ -1,3 +1,6 @@
+# Write a code which finds the NEXT higher number using the same given digits of a given integer. i.e.,
+# if the given integer is 1234, you should return 1243.
+
 def find_next(value, n):
 
     number = list(map(int, value))
